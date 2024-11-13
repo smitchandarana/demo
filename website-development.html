@@ -6,60 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* Style for the floating 'Back' button */
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        display: none; /* Initially hidden */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .back-to-top:hover {
+        background-color: #555;
+      }
+    </style>
   </head>
-  <body>
+  <body class="is-preload">
 
-    <!-- Header -->
-    <header class="wrapper style1 align-center">
-      <div class="inner">
-        <h1>Website Development Services</h1>
-        <p>Custom websites that drive results. Built with performance, usability, and SEO in mind.</p>
-      </div>
-    </header>
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
 
-    <!-- Content -->
-    <section class="wrapper style1">
-      <div class="inner">
-        <h2>What We Do</h2>
-        <p>At Phoenix Consulting, we design and develop custom websites that cater to your unique business needs. From e-commerce platforms to corporate websites and personal portfolios, we deliver solutions that not only look great but perform flawlessly across all devices.</p>
-        <ul>
-          <li><strong>Responsive Design</strong>: Websites optimized for every device, ensuring the best experience for your users on desktops, tablets, and mobile devices.</li>
-          <li><strong>SEO Optimization</strong>: Our websites are built with SEO best practices in mind, helping you increase organic search rankings and attract more visitors.</li>
-          <li><strong>Scalability</strong>: We create scalable websites that grow with your business, allowing you to easily expand and add new features as needed.</li>
-          <li><strong>Custom Development</strong>: Our development process is tailor-made to suit your specific requirements, whether it's a CMS, e-commerce site, or a fully custom-built web solution.</li>
-        </ul>
-        
-        <h2>Our Development Process</h2>
-        <p>We follow a structured approach to ensure every project is completed efficiently and effectively:</p>
-        <ol>
-          <li><strong>Discovery & Planning</strong>: We start by understanding your goals, target audience, and business requirements.</li>
-          <li><strong>Design & Prototyping</strong>: Our design team creates mockups and prototypes to bring your vision to life.</li>
-          <li><strong>Development</strong>: Using the latest technologies, we develop your website, focusing on performance, security, and usability.</li>
-          <li><strong>Testing</strong>: We test your website across various devices and browsers to ensure a seamless experience for every user.</li>
-          <li><strong>Launch & Support</strong>: After a successful launch, we offer ongoing maintenance and updates to keep your website running smoothly.</li>
-        </ol>
-        
-        <h2>Technologies We Use</h2>
-        <p>We utilize cutting-edge web technologies to create high-performing, secure, and user-friendly websites:</p>
-        <ul>
-          <li>HTML5, CSS3, and JavaScript</li>
-          <li>PHP, Python, Node.js</li>
-          <li>WordPress, Joomla, and other CMS platforms</li>
-          <li>E-commerce platforms like Shopify, WooCommerce, and Magento</li>
-          <li>Responsive frameworks like Bootstrap and Foundation</li>
-        </ul>
-        
-        <h2>Why Choose Us?</h2>
-        <p>At Phoenix Consulting, we don't just build websites; we build long-term digital assets that help your business thrive online. Whether you need a small business website or a large-scale e-commerce platform, we provide end-to-end services to ensure your site is user-friendly, fast, and fully optimized for search engines.</p>
-      </div>
-    </section>
+      <!-- Banner Section -->
+      <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+        <div class="content">
+          <h1>Website Development Services</h1>
+          <p class="major">Custom websites that drive results. Built with performance, usability, and SEO in mind.</p>
+          <ul class="actions stacked">
+            <li><a href="#what-we-do" class="button big wide smooth-scroll-middle">Learn More About Our Process</a></li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/banner_website_development.jpg" alt="Phoenix Consulting - Website Development" />
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="wrapper style1 align-center">
-      <div class="inner">
-        <p>&copy; 2024 Phoenix Consulting. All Rights Reserved.</p>
-      </div>
-    </footer>
+      <!-- What We Do Section -->
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="what-we-do">
+        <div class="content">
+          <h2>What We Do</h2>
+          <p>At Phoenix Consulting, we design and develop custom websites that cater to your unique business needs. Whether it’s an e-commerce platform, a corporate website, or a personal portfolio, we ensure that your site not only looks great but performs flawlessly on any device.</p>
+          <ul>
+            <li><strong>Responsive Design</strong>: Websites optimized for every device, ensuring the best user experience on desktops, tablets, and mobiles.</li>
+            <li><strong>SEO Optimization</strong>: Built with SEO best practices, ensuring your site ranks higher and attracts more visitors.</li>
+            <li><strong>Scalability</strong>: Websites that grow with your business, with easy scalability and new feature integration.</li>
+            <li><strong>Custom Development</strong>: Tailor-made web solutions, from CMS to fully custom-built sites.</li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/website_design.jpg" alt="Custom Website Design" />
+        </div>
+      </section>
+
+      <!-- Our Development Process Section -->
+      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+        <div class="content">
+          <h2>Our Development Process</h2>
+          <p>We follow a structured, transparent process to ensure we deliver top-quality websites that meet your goals:</p>
+          <ol>
+            <li><strong>Discovery & Planning</strong>: Understanding your business, goals, and audience.</li>
+            <li><strong>Design & Prototyping</strong>: Creating wireframes and prototypes to ensure your vision comes to life.</li>
+            <li><strong>Development</strong>: Building your site with the latest technologies, focusing on performance and security.</li>
+            <li><strong>Testing</strong>: Rigorous testing across devices and browsers to ensure a flawless user experience.</li>
+            <li><strong>Launch & Support</strong>: Ongoing maintenance and updates post-launch to keep your site running smoothly.</li>
+          </ol>
+        </div>
+        <div class="image">
+          <img src="images/development_process.jpg" alt="Development Process" />
+        </div>
+      </section>
+
+      <!-- Technologies We Use Section -->
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>Technologies We Use</h2>
+          <p>We utilize cutting-edge web technologies to ensure your website is high-performing, secure, and user-friendly:</p>
+          <ul class="actions stacked">
+            <li><span class="button small">HTML5, CSS3, JavaScript</span></li>
+            <li><span class="button small">PHP, Python, Node.js</span></li>
+            <li><span class="button small">WordPress, Joomla, CMS Platforms</span></li>
+            <li><span class="button small">E-commerce Solutions (Shopify, WooCommerce, Magento)</span></li>
+            <li><span class="button small">Responsive Frameworks (Bootstrap, Foundation)</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+        <div class="content">
+          <h2>Why Choose Us?</h2>
+          <p>At Phoenix Consulting, we build more than just websites. We create long-term digital assets that help your business thrive online. Here’s why clients trust us:</p>
+          <ul class="actions stacked">
+            <li><span class="button small">User-Friendly Designs</span></li>
+            <li><span class="button small">SEO & Performance Optimized</span></li>
+            <li><span class="button small">Scalable Solutions for Growth</span></li>
+            <li><span class="button small">End-to-End Support & Maintenance</span></li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/why_choose_us.jpg" alt="Why Choose Phoenix Consulting" />
+        </div>
+      </section>
+
+      <!-- Get In Touch Section -->
+      <section class="wrapper style1 align-center">
+        <div class="inner medium">
+          <h2>Get in Touch</h2>
+          <p>If you’re ready to build a website that works as hard as your business, we’d love to hear from you.</p>
+          <ul class="actions stacked">
+            <li><a href="contact-us.html" class="button big">Contact Us Today</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          <ul class="icons">
+            <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+          </ul>
+          <p>&copy; 2024 Phoenix Consulting. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Back to Top / Back Button -->
+    <button class="back-to-top" id="backToTopBtn" onclick="goBackOrScroll()">&#8679;</button>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      // Show the "Back to Top" button when scrolling
+      window.onscroll = function() {
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+
+      // Go back to previous page or scroll to top
+      function goBackOrScroll() {
+        if (window.scrollY === 0) {
+          // If the user is at the top of the page, go back to the previous page
+          window.history.back();
+        } else {
+          // Otherwise, scroll to the top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    </script>
 
   </body>
-</html>
+</
